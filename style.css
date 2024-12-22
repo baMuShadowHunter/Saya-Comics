@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    position: relative;
+    background-image: url(Saya.png);
+    background-repeat: no-repeat;
+    background-size: 560px;
+    background-position: right bottom;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, .05);
+    z-index: 1;
+}
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background on scroll */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow */
+    transition: all ease 0.7s;
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    padding: 10px 15px;
+    color: rgb(112, 110, 110);
+    font-size: 14px;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+.sitename{
+    font-size: 25px;
+    font-weight: bold;
+    
+
+
+    /* font-family: 'Permanent Marker', cursive;
+    font-size: 33px;
+    color: #00FF00; 
+    text-shadow: 2px 2px 4px #000000; */
+}
+.logo img{
+    width: 60px;
+    border-radius: 10px;
+    padding-inline: 5px
+}
+.menu li a:hover,.active{
+    background-color: #29292929;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all ease 0.4s;
+}
+.hero{
+    width: 650px;
+    position: absolute;
+    left: 8%;
+    top: 33%;
+    transition: transalate(-8%,-33%);
+    line-height: 60px;
+}
+.hero p:nth-child(1),.hero .details{
+    color: rgb(107, 104, 104);;
+    font-size: 19px;
+    font-family: "Pacifico", cursive;
+}
+.details{
+    line-height: 30px !important;
+}
+.hero h2{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 0px;
+    color: black;
+}
+.hero span{
+    color: orange;
+}
+.download{
+    width: 160px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+.download:hover{
+    background-color: black;
+    transition: all ease 0.4s;
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: black;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+.heading span{
+    background-color: orangered;
+    color: white;
+    display: inline-block;
+    padding: .7rem 2rem;
+    border-radius: 3px 60px ;
+}
+.favorites .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    grid-area: 1rem;
+}
+.favorites .container .box{
+    padding: 2rem 1rem;
+    background-color: white;
+    outline:.1rem solid black;
+    outline-offset: -1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow:rgba(0, 0, 0, .1) ;
+}
+.favorites .container .box:hover{
+    outline: .3rem solid black;
+    outline-offset: 0rem;
+}
+.favorites .container .box img{
+    margin: 2rem 0;
+    height: 13rem;
+}
+.favorites .container .box h3{
+    font-size: 2rem;
+    line-height: .5;
+    color: black;
+    font-family: "Pacifico", cursive;
+}
+.favorites .container .box p{
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: #666;
+    padding: 1rem 0;
+    font-family: "Pacifico", cursive;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    margin-left: 130px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 5px 20px;
+    margin-top: 10px;
+    font-family: "Pacifico", cursive;
+}
+.btn:hover{
+    background-color: black;
+    transition: all ease 0.4s;
+    border-radius: 15px;
+}
+
+
+
+
+
+.about{
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-family: "Pacifico", cursive;
+}
+.contact{
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    text-align: center;
+    padding: 9px;
+    font-family: "Pacifico", cursive;
+}
+.contact span{
+    padding: 10px;
+}
+.cont a i {
+    color: white;
+  }
+.cont li{
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    margin-bottom: 10px;
+   
+}
+.ab{
+    margin-top: 32px;
+}
+.ba{
+    margin-left: 213px;
+    margin-top: 12px;
+}
+
+
+.youtube {
+    /* background-color: #00000005; */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.late {
+    font-family: 'Pacifico', cursive;
+    color: #ffb347;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.check, .check2 {
+    font-family: 'Edu AU VIC WA NT Guides', cursive;
+    color: #df3923;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.youtube{
+    /* background-color: #ccadad73; */
+    width: 100%;
+    /* border-radius: 22px; */
+
+}
+.video {
+    width: 70%;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.iframe {
+    margin: 10px;
+    height: 150px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.iframe:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+h3.check2 {
+    color: #ffb347;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
